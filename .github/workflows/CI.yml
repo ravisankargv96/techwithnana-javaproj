@@ -28,11 +28,12 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
 
+    # there is an issue with given DockerFile, needs to re-write it.
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
       with: 
         image: ravigv96/demo-app
         registry: docker.io
-        username: ravigv96
-        password: NAGAmani@96
+        username: 
+        password: 
       
